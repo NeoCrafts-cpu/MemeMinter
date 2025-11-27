@@ -1,5 +1,7 @@
 "use client";
 
+import { CSSProperties } from "react";
+
 /**
  * Custom SVG Icons for MemeMinter AI
  * Beautiful, unique icons to replace emojis
@@ -8,16 +10,18 @@
 interface IconProps {
   className?: string;
   size?: number;
+  style?: CSSProperties;
 }
 
 // Rocket Icon - Main branding
-export function RocketIcon({ className = "", size = 24 }: IconProps) {
+export function RocketIcon({ className = "", size = 24, style }: IconProps) {
   return (
     <svg
       viewBox="0 0 24 24"
       width={size}
       height={size}
       className={className}
+      style={style}
       fill="none"
       stroke="currentColor"
       strokeWidth="1.5"
@@ -34,13 +38,14 @@ export function RocketIcon({ className = "", size = 24 }: IconProps) {
 }
 
 // Sparkle Icon - Magic/Generate
-export function SparkleIcon({ className = "", size = 24 }: IconProps) {
+export function SparkleIcon({ className = "", size = 24, style }: IconProps) {
   return (
     <svg
       viewBox="0 0 24 24"
       width={size}
       height={size}
       className={className}
+      style={style}
       fill="currentColor"
     >
       <path d="M12 0L14.59 9.41L24 12L14.59 14.59L12 24L9.41 14.59L0 12L9.41 9.41L12 0Z" />
@@ -49,13 +54,14 @@ export function SparkleIcon({ className = "", size = 24 }: IconProps) {
 }
 
 // Palette Icon - Art/Branding
-export function PaletteIcon({ className = "", size = 24 }: IconProps) {
+export function PaletteIcon({ className = "", size = 24, style }: IconProps) {
   return (
     <svg
       viewBox="0 0 24 24"
       width={size}
       height={size}
       className={className}
+      style={style}
       fill="none"
       stroke="currentColor"
       strokeWidth="1.5"
@@ -72,13 +78,14 @@ export function PaletteIcon({ className = "", size = 24 }: IconProps) {
 }
 
 // Coin Icon - Token
-export function CoinIcon({ className = "", size = 24 }: IconProps) {
+export function CoinIcon({ className = "", size = 24, style }: IconProps) {
   return (
     <svg
       viewBox="0 0 24 24"
       width={size}
       height={size}
       className={className}
+      style={style}
       fill="none"
       stroke="currentColor"
       strokeWidth="1.5"
@@ -93,13 +100,14 @@ export function CoinIcon({ className = "", size = 24 }: IconProps) {
 }
 
 // Lightning Icon - Gas/Speed
-export function LightningIcon({ className = "", size = 24 }: IconProps) {
+export function LightningIcon({ className = "", size = 24, style }: IconProps) {
   return (
     <svg
       viewBox="0 0 24 24"
       width={size}
       height={size}
       className={className}
+      style={style}
       fill="currentColor"
     >
       <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z" />
@@ -108,13 +116,14 @@ export function LightningIcon({ className = "", size = 24 }: IconProps) {
 }
 
 // Heart Icon - Love/Community
-export function HeartIcon({ className = "", size = 24 }: IconProps) {
+export function HeartIcon({ className = "", size = 24, style }: IconProps) {
   return (
     <svg
       viewBox="0 0 24 24"
       width={size}
       height={size}
       className={className}
+      style={style}
       fill="currentColor"
     >
       <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z" />
@@ -123,13 +132,14 @@ export function HeartIcon({ className = "", size = 24 }: IconProps) {
 }
 
 // Diamond Icon - Value/Premium
-export function DiamondIcon({ className = "", size = 24 }: IconProps) {
+export function DiamondIcon({ className = "", size = 24, style }: IconProps) {
   return (
     <svg
       viewBox="0 0 24 24"
       width={size}
       height={size}
       className={className}
+      style={style}
       fill="none"
       stroke="currentColor"
       strokeWidth="1.5"
@@ -145,13 +155,14 @@ export function DiamondIcon({ className = "", size = 24 }: IconProps) {
 }
 
 // Shield Icon - Security
-export function ShieldIcon({ className = "", size = 24 }: IconProps) {
+export function ShieldIcon({ className = "", size = 24, style }: IconProps) {
   return (
     <svg
       viewBox="0 0 24 24"
       width={size}
       height={size}
       className={className}
+      style={style}
       fill="none"
       stroke="currentColor"
       strokeWidth="1.5"
@@ -165,13 +176,14 @@ export function ShieldIcon({ className = "", size = 24 }: IconProps) {
 }
 
 // Wallet Icon - Crypto Wallet
-export function WalletIcon({ className = "", size = 24 }: IconProps) {
+export function WalletIcon({ className = "", size = 24, style }: IconProps) {
   return (
     <svg
       viewBox="0 0 24 24"
       width={size}
       height={size}
       className={className}
+      style={style}
       fill="none"
       stroke="currentColor"
       strokeWidth="1.5"
@@ -186,13 +198,14 @@ export function WalletIcon({ className = "", size = 24 }: IconProps) {
 }
 
 // Globe Icon - Network/Web
-export function GlobeIcon({ className = "", size = 24 }: IconProps) {
+export function GlobeIcon({ className = "", size = 24, style }: IconProps) {
   return (
     <svg
       viewBox="0 0 24 24"
       width={size}
       height={size}
       className={className}
+      style={style}
       fill="none"
       stroke="currentColor"
       strokeWidth="1.5"
@@ -207,13 +220,14 @@ export function GlobeIcon({ className = "", size = 24 }: IconProps) {
 }
 
 // Check Icon - Success
-export function CheckIcon({ className = "", size = 24 }: IconProps) {
+export function CheckIcon({ className = "", size = 24, style }: IconProps) {
   return (
     <svg
       viewBox="0 0 24 24"
       width={size}
       height={size}
       className={className}
+      style={style}
       fill="none"
       stroke="currentColor"
       strokeWidth="2.5"
@@ -226,13 +240,14 @@ export function CheckIcon({ className = "", size = 24 }: IconProps) {
 }
 
 // Warning Icon - Alert
-export function WarningIcon({ className = "", size = 24 }: IconProps) {
+export function WarningIcon({ className = "", size = 24, style }: IconProps) {
   return (
     <svg
       viewBox="0 0 24 24"
       width={size}
       height={size}
       className={className}
+      style={style}
       fill="none"
       stroke="currentColor"
       strokeWidth="1.5"
@@ -247,13 +262,14 @@ export function WarningIcon({ className = "", size = 24 }: IconProps) {
 }
 
 // Link Icon - External Link
-export function ExternalLinkIcon({ className = "", size = 24 }: IconProps) {
+export function ExternalLinkIcon({ className = "", size = 24, style }: IconProps) {
   return (
     <svg
       viewBox="0 0 24 24"
       width={size}
       height={size}
       className={className}
+      style={style}
       fill="none"
       stroke="currentColor"
       strokeWidth="1.5"
@@ -268,13 +284,14 @@ export function ExternalLinkIcon({ className = "", size = 24 }: IconProps) {
 }
 
 // Droplet Icon - Faucet
-export function DropletIcon({ className = "", size = 24 }: IconProps) {
+export function DropletIcon({ className = "", size = 24, style }: IconProps) {
   return (
     <svg
       viewBox="0 0 24 24"
       width={size}
       height={size}
       className={className}
+      style={style}
       fill="currentColor"
     >
       <path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z" />
@@ -283,13 +300,14 @@ export function DropletIcon({ className = "", size = 24 }: IconProps) {
 }
 
 // Search Icon - Explorer
-export function SearchIcon({ className = "", size = 24 }: IconProps) {
+export function SearchIcon({ className = "", size = 24, style }: IconProps) {
   return (
     <svg
       viewBox="0 0 24 24"
       width={size}
       height={size}
       className={className}
+      style={style}
       fill="none"
       stroke="currentColor"
       strokeWidth="1.5"
@@ -303,13 +321,14 @@ export function SearchIcon({ className = "", size = 24 }: IconProps) {
 }
 
 // Polygon Icon - Network Logo
-export function PolygonIcon({ className = "", size = 24 }: IconProps) {
+export function PolygonIcon({ className = "", size = 24, style }: IconProps) {
   return (
     <svg
       viewBox="0 0 24 24"
       width={size}
       height={size}
       className={className}
+      style={style}
       fill="currentColor"
     >
       <path d="M16.4 8.2c-.4-.2-.9-.2-1.2 0l-2.9 1.7-2 1.1-2.9 1.7c-.4.2-.9.2-1.2 0L4 11.5c-.4-.2-.6-.6-.6-1V8.2c0-.4.2-.8.6-1l2.1-1.2c.4-.2.9-.2 1.2 0l2.1 1.2c.4.2.6.6.6 1v1.7l2-1.1V7c0-.4-.2-.8-.6-1L8 3.7c-.4-.2-.9-.2-1.2 0L3.2 6C2.8 6.2 2.6 6.6 2.6 7v4.6c0 .4.2.8.6 1l3.6 2.1c.4.2.9.2 1.2 0l2.9-1.7 2-1.1 2.9-1.7c.4-.2.9-.2 1.2 0l2.1 1.2c.4.2.6.6.6 1v2.3c0 .4-.2.8-.6 1L17 16.9c-.4.2-.9.2-1.2 0l-2.1-1.2c-.4-.2-.6-.6-.6-1v-1.6l-2 1.1V16c0 .4.2.8.6 1l3.6 2.1c.4.2.9.2 1.2 0l3.6-2.1c.4-.2.6-.6.6-1V11c0-.4-.2-.8-.6-1l-3.7-1.8z" />
@@ -318,13 +337,14 @@ export function PolygonIcon({ className = "", size = 24 }: IconProps) {
 }
 
 // Fox Icon - MetaMask
-export function FoxIcon({ className = "", size = 24 }: IconProps) {
+export function FoxIcon({ className = "", size = 24, style }: IconProps) {
   return (
     <svg
       viewBox="0 0 24 24"
       width={size}
       height={size}
       className={className}
+      style={style}
       fill="none"
     >
       <path d="M21.3 2L13 8.5l1.5-3.5L21.3 2z" fill="#E17726" />
@@ -346,13 +366,14 @@ export function FoxIcon({ className = "", size = 24 }: IconProps) {
 }
 
 // Magic Wand Icon - Create/Generate
-export function WandIcon({ className = "", size = 24 }: IconProps) {
+export function WandIcon({ className = "", size = 24, style }: IconProps) {
   return (
     <svg
       viewBox="0 0 24 24"
       width={size}
       height={size}
       className={className}
+      style={style}
       fill="none"
       stroke="currentColor"
       strokeWidth="1.5"
@@ -374,13 +395,14 @@ export function WandIcon({ className = "", size = 24 }: IconProps) {
 }
 
 // Celebration Icon - Success/Party
-export function CelebrationIcon({ className = "", size = 24 }: IconProps) {
+export function CelebrationIcon({ className = "", size = 24, style }: IconProps) {
   return (
     <svg
       viewBox="0 0 24 24"
       width={size}
       height={size}
       className={className}
+      style={style}
       fill="none"
       stroke="currentColor"
       strokeWidth="1.5"
@@ -399,13 +421,14 @@ export function CelebrationIcon({ className = "", size = 24 }: IconProps) {
 }
 
 // Fire Icon - Hot/Trending  
-export function FireIcon({ className = "", size = 24 }: IconProps) {
+export function FireIcon({ className = "", size = 24, style }: IconProps) {
   return (
     <svg
       viewBox="0 0 24 24"
       width={size}
       height={size}
       className={className}
+      style={style}
       fill="currentColor"
     >
       <path d="M12 23c-4.97 0-9-3.58-9-8 0-2.52.74-4.6 2.2-6.19.27-.29.71-.37 1.08-.2.37.18.59.56.55.96-.07.65.02 1.21.22 1.65.16.35.42.63.77.85.13-.92.53-1.78 1.18-2.53.9-1.04 2.22-1.75 3.54-2.35.99-.45 1.97-.83 2.78-1.36.35-.23.77-.27 1.14-.1.38.17.64.52.68.92.21 2.02-.31 3.76-1.04 5.28-.16.32-.33.64-.51.95 1.11-.34 2.13-.92 2.86-1.77.3-.35.77-.49 1.2-.36.43.14.75.51.81.95.14 1.03.03 2-.3 2.86-.63 1.65-1.88 2.97-3.24 4.08C14.51 20.2 12.71 21 12 23z" />
@@ -414,13 +437,14 @@ export function FireIcon({ className = "", size = 24 }: IconProps) {
 }
 
 // Gift Icon - Free
-export function GiftIcon({ className = "", size = 24 }: IconProps) {
+export function GiftIcon({ className = "", size = 24, style }: IconProps) {
   return (
     <svg
       viewBox="0 0 24 24"
       width={size}
       height={size}
       className={className}
+      style={style}
       fill="none"
       stroke="currentColor"
       strokeWidth="1.5"
@@ -437,13 +461,14 @@ export function GiftIcon({ className = "", size = 24 }: IconProps) {
 }
 
 // Chain Icon - Blockchain
-export function ChainIcon({ className = "", size = 24 }: IconProps) {
+export function ChainIcon({ className = "", size = 24, style }: IconProps) {
   return (
     <svg
       viewBox="0 0 24 24"
       width={size}
       height={size}
       className={className}
+      style={style}
       fill="none"
       stroke="currentColor"
       strokeWidth="1.5"
@@ -457,13 +482,14 @@ export function ChainIcon({ className = "", size = 24 }: IconProps) {
 }
 
 // Layers Icon - Clone/EIP-1167
-export function LayersIcon({ className = "", size = 24 }: IconProps) {
+export function LayersIcon({ className = "", size = 24, style }: IconProps) {
   return (
     <svg
       viewBox="0 0 24 24"
       width={size}
       height={size}
       className={className}
+      style={style}
       fill="none"
       stroke="currentColor"
       strokeWidth="1.5"
@@ -478,13 +504,14 @@ export function LayersIcon({ className = "", size = 24 }: IconProps) {
 }
 
 // Code Icon - Open Source
-export function CodeIcon({ className = "", size = 24 }: IconProps) {
+export function CodeIcon({ className = "", size = 24, style }: IconProps) {
   return (
     <svg
       viewBox="0 0 24 24"
       width={size}
       height={size}
       className={className}
+      style={style}
       fill="none"
       stroke="currentColor"
       strokeWidth="1.5"
@@ -498,13 +525,14 @@ export function CodeIcon({ className = "", size = 24 }: IconProps) {
 }
 
 // Lightbulb Icon - Idea
-export function LightbulbIcon({ className = "", size = 24 }: IconProps) {
+export function LightbulbIcon({ className = "", size = 24, style }: IconProps) {
   return (
     <svg
       viewBox="0 0 24 24"
       width={size}
       height={size}
       className={className}
+      style={style}
       fill="none"
       stroke="currentColor"
       strokeWidth="1.5"
@@ -519,13 +547,14 @@ export function LightbulbIcon({ className = "", size = 24 }: IconProps) {
 }
 
 // Close/X Icon
-export function CloseIcon({ className = "", size = 24 }: IconProps) {
+export function CloseIcon({ className = "", size = 24, style }: IconProps) {
   return (
     <svg
       viewBox="0 0 24 24"
       width={size}
       height={size}
       className={className}
+      style={style}
       fill="none"
       stroke="currentColor"
       strokeWidth="2"
@@ -539,13 +568,14 @@ export function CloseIcon({ className = "", size = 24 }: IconProps) {
 }
 
 // Spinner/Loading Icon
-export function SpinnerIcon({ className = "", size = 24 }: IconProps) {
+export function SpinnerIcon({ className = "", size = 24, style }: IconProps) {
   return (
     <svg
       viewBox="0 0 24 24"
       width={size}
       height={size}
       className={`animate-spin ${className}`}
+      style={style}
       fill="none"
     >
       <circle
