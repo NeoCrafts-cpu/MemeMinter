@@ -2,21 +2,14 @@ import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
   /**
-   * Image configuration for DALL-E generated images
-   * 
-   * DALL-E returns temporary URLs from OpenAI's CDN.
-   * We need to allow these domains in Next.js Image component.
+   * Image configuration for avatar/logo generation
+   * Using DiceBear API for free unlimited avatar generation
    */
   images: {
     remotePatterns: [
       {
         protocol: "https",
-        hostname: "oaidalleapiprodscus.blob.core.windows.net",
-        pathname: "/**",
-      },
-      {
-        protocol: "https",
-        hostname: "dalleprodsec.blob.core.windows.net",
+        hostname: "api.dicebear.com",
         pathname: "/**",
       },
     ],
@@ -24,7 +17,6 @@ const nextConfig: NextConfig = {
   
   /**
    * Turbopack configuration (Next.js 16+ default bundler)
-   * Empty config to acknowledge we're using Turbopack
    */
   turbopack: {},
 };
